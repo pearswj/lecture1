@@ -18,8 +18,8 @@ tfoot {
 }
 
 /* uncomment to style cells */
-/* td {
+ td {
     width: 40px;
-    text-align: center;
+    text-align: right;
     font-family: monospace;
-} */
+} 
