@@ -33,7 +33,7 @@ Function makeRows(){
     const columns =  x_slider.valueAsNumber
     const rows = y_slider.valueAsNumber
 
-
+    
     document.getElementById( 'x_label' ).innerHTML = 'X: ' + columns
     document.getAnimations( 'y_label' ).innerHTML= 'Y: ' + rows
 
