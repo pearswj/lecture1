@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>The Milky Way</title>
+        
+        <style>
+            body {background-color: black;}
+            h1 {color: deeppink;}
+            p {color: lightgrey;}
+            pre {color: rgb(146, 146, 146);}
+            html {font-family:  Helvetica}
+            img {width: 900px}
+            #caption {display: center; font-style: italic;}
+            #ref {color: rgb(253, 212, 252); display: center; font-style: italic;}
+
+        </style>
+
+    </head>
+
+    <body>
+        <!--LECTURE 1 - FIRST  PART OF THE INITIAL SCRIPT -->
+
+        <h1> - The Milky Way -  </h1>
+       
+        <p align="left"> The Milky Way is the galaxy that contains the solar system. Moreover, the galaxy's definition is perceived as a "band of light seen in the night sky" - definition from the earth. The term "Milky Way" originates from the Latin word "via lactea"  that appears as a band due to its disk-shape structure. 
+        </p>
+
+        <p id="ref">
+            <a href="https://en.wikipedia.org/wiki/Milky_Way">About the Galaxy & the Milky Way via wikipedia </a>
+        </p>
+
+        <img id="myImage"
+        alt="Revealing the Milky Way's Center"
+        src= "https://www.nasa.gov/sites/default/files/thumbnails/image/ssc2006-02a_0.jpg">
+
+        <p id="caption"> The center of our Milky Way galaxy is hidden from the prying eyes of optical <br> telescopes by clouds of obscuring dust and gas. But in this stunning vista, <br>the Spitzer Space Telescope's infrared cameras penetrate much of the dust, <br>revealing the stars of the crowded galactic center region.  
+        </p>
+
+        <!--LECTURE 1 - SECOND PART OF THE INITIAL SCRIPT -->
+
+        <div id="ui">
+            <input id="x" name="x" type="range" min="1" max="20" step="1" value="10" oninput="makeRows()">
+            <label id="x_label" for="x">X: 10</label>
+            <input id="y" name="y" type="range" min="1" max="50" step="3" value="10" oninput="makeRows()">
+            <label id="y_label" for="y">Y: 10</label>
+        </div>
+
+        <table id="table"></table>
+
+        <script src="FR_scritp01.js"></script>
+    </body>
+</html>
