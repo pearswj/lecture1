@@ -20,7 +20,7 @@
 const x_slider = document.getElementById('x')
 const y_slider = document.getElementById('y')
 
-Function makeRows(){
+function makeRows(){
     let table = document.getElementById( 'table' )
     if ( table ) {
         table.remove()
@@ -39,13 +39,16 @@ Function makeRows(){
 
 
     for ( i = 0; i < columns; i ++) {
-        const row = document.createElement( ' tr' )
+        const row = document.createElement( 'tr' )
         table.appendChild( row )
 
         for ( j = 0; j < columns; j ++ ) {
 
             const cell = document.createElement( 'td' )
             cell.innerText = i + '|' + j
+            row.appendChild(cell) // add cell (column) to row!
         }
     }
 }
+
+makeRows() // initialise table on page load
